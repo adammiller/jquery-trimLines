@@ -19,8 +19,7 @@
 		defaults: {
 			'maxLines': 3, // Maximum lines of text to allow.
 			'trimTextSelector': null, // Optional selector for restricting the text trimming to a child element
-			'truncationText': '&hellip;', // The text inserted if any truncation occurs
-			'ellipsisSpace': 4 // number of extra characters to remove from the last line to ensure space for the ellipsis
+			'truncationText': '&hellip;' // The text inserted if any truncation occurs
 		},
 		fn: {
 			// shortens a node's textLength while respecting it's child nodes

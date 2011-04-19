@@ -23,7 +23,12 @@ Trimlines accepts the following options:
 - trimTextSelector - Optional selector for restricting the text trimming to a child element
 - truncationText - The text inserted if any truncation occurs. Defaults to '&hellip;'
 
-$( '.celebrity-introduction' ).trimLines( { 'maxLines': 5, 'trimTextSelector': '.celebrity-bio' } );
 
 Examples of use
 ---------------
+
+	// example with no options
+	$( '.post .body' ).trimLines( );
+	
+	// example allowing 5 lines of text, and restricting the trimming to a child container
+	$( '#user-profile' ).trimLines( { 'maxLines': 5, 'trimTextSelector': '.bio' } );
